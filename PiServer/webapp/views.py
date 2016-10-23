@@ -13,6 +13,7 @@ def about(request):
   context = {
     'title': 'Daniel Yuan'
   }
+  print ("In About")
   return render(request, 'webapp/about.html', context)
 
 def portfolio(request):
