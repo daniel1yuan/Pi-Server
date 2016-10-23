@@ -2,7 +2,7 @@
 {% load staticfiles %}
 
 {% block extra_head %}
-  <link rel = "stylesheet" type = "text/css" href = "{% static 'webapp/css/about.css' %}" >
+  <link rel = "stylesheet" type = "text/css" href = "{% static 'webapp/css/contact.css' %}" >
 	<link href='https://fonts.googleapis.com/css?family=Expletus+Sans' rel='stylesheet' type='text/css'>	
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 {% endblock %}
@@ -12,17 +12,28 @@
 		<div class = "navHeaderContainer">
 			<a class = "navLink" id = "home" href = "/webapp/" >Home</a>
 			<div class = "navLinkDivider">|</div>	
-			<a class = "navLink" id = "about">About</a>
+			<a class = "navLink" id = "about" href = "/webapp/about/">About</a>
 			<div class = "navLinkDivider">|</div>	
 			<a class = "navLink" id = "portfolio" href = "/webapp/portfolio">Portfolio</a>
 			<div class = "navLinkDivider">|</div>
-			<a class = "navLink" id = "contact" href = "/webapp/contact">Contact</a>
+			<a class = "navLink" id = "contact" >Contact</a>
 		</div>
-    <div class = "pageTitle">About</div>
+    <div class = "pageTitle">Contact</div>
   </div>
   <div class = "content">
     <div class = "textContainer">
-      I'm a Junior attending University of Illinois Urbana Champaign majoring in EE in addition to a minor in CS. Currently, I've been getting a deeper look into AI, specifically computer vision. Stop reading this and <a href= "/webapp/">contact me</a>.
+      Want to get in touch? You can reach me here:<br>
+        <div class = "linkContainer">
+          <div class = "externalLink">
+            <a id = "github"  href = "https://github.com/daniel1yuan">
+            </a>
+          </div>
+          <div class = "externalLink">
+            <a id = "linkedIn" href = "https://www.linkedin.com/in/daniel-yuan-546144b7">
+            </a>
+          </div>
+        </div> 
+      Email: daniel1yuan@gmail.com
     </div>
   </div>
 {% endblock %}

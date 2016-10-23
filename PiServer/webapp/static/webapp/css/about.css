@@ -1,0 +1,9 @@
+.textContainer{
+  position: absolute;
+  top: 5%;
+  left: 25%;
+  width: 50%;
+  height: 90%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}

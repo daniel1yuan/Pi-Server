@@ -1,20 +1,20 @@
-<!DOCTYPE html>
-<head>
-    <title>Daniel Yuan</title>
-    <link rel = "stylesheet" type = "text/css" href = "../static/css/landing.css" >
+{% extends "webapp/__base.html" %}
+{% load staticfiles %}
+
+{% block extra_head %}
+  <link rel = "stylesheet" type = "text/css" href = "{% static 'webapp/css/landing.css' %}" >
 	<link href='https://fonts.googleapis.com/css?family=Expletus+Sans' rel='stylesheet' type='text/css'>	
-</head>
-<body>
+{% endblock %}
+
+{% block content %}
 	<div id = "homeContainer">
     	<div id = "name" >Daniel Yuan</div>
 		<div class = "navContainer">
-			<a class = "navLink" id = "about">About</a>
-			<div class = "navLink">|</div>	
-			<a class = "navLink" id = "resume">Resume</a>
-			<div class = "navLink">|</div>
-			<a class = "navLink" id = "portfolio">Portfolio</a>
-			<div class = "navLink">|</div>
-			<a class = "navLink" id = "contact">Contact</a>
+			<a class = "navLink" id = "about" href = "/webapp/about" >About</a>
+			<div class = "navLinkDivider">|</div>	
+			<a class = "navLink" id = "portfolio" href = "/webapp/portfolio">Portfolio</a>
+			<div class = "navLinkDivider">|</div>
+			<a class = "navLink" id = "contact" href = "/webapp/contact" >Contact</a>
 		</div>
 		<div class = "linkContainer">
 			<div class = "externalLink">
@@ -27,5 +27,4 @@
 			</div>
 		</div>
 	</div>
-</body>
-</html>
+{% endblock %}
