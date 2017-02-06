@@ -2,29 +2,40 @@
 {% load staticfiles %}
 
 {% block extra_head %}
-  <link rel = "stylesheet" type = "text/css" href = "{% static 'webapp/css/landing.css' %}" >
+  <link rel = "stylesheet" type = "text/css" href = "{% static 'webapp/css/header.css' %}">
+  <link rel = "stylesheet" type = "text/css" href = "{% static 'webapp/css/landing.css' %}">
 	<link href='https://fonts.googleapis.com/css?family=Expletus+Sans' rel='stylesheet' type='text/css'>	
+  <link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
 {% endblock %}
 
 {% block content %}
-	<div id = "homeContainer">
-    	<div id = "name" >Daniel Yuan</div>
-		<div class = "navContainer">
-			<a class = "navLink" id = "about" href = "/about" >About</a>
-			<div class = "navLinkDivider">|</div>	
-			<a class = "navLink" id = "portfolio" href = "/portfolio">Portfolio</a>
-			<div class = "navLinkDivider">|</div>
-			<a class = "navLink" id = "contact" href = "/contact" >Contact</a>
-		</div>
-		<div class = "linkContainer">
-			<div class = "externalLink">
-				<a id = "github"  href = "https://github.com/daniel1yuan">
-				</a>
-			</div>
-			<div class = "externalLink">
-				<a id = "linkedIn" href = "https://www.linkedin.com/in/daniel-yuan-546144b7">
-				</a>
-			</div>
-		</div>
-	</div>
+  <div class = "page-container">
+    <div class = "mobile-content">
+      <ul class = "mobile-site-nav">
+        <li>About</li>
+        <li>Portfolio</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    <div id = "nav">
+      <img class = "logo" src = "{% static 'webapp/assets/logo.svg' %}"></img>
+      <ul class = "site-nav">
+        <li>About</li>
+        <li>Portfolio</li>
+        <li>Contact</li>
+      </ul>
+      <div class = "email-link">email</div>
+      <div class = "mobile-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div class = "home-sections">
+      <!-- All Sections in here -->
+      <div style = "height: 2000px"></div>
+    </div>
+    <div class = "lmao">TEST</div>
+  </div>
 {% endblock %}
