@@ -46,8 +46,18 @@
   transition-duration: 0.3s;
 }
 
-.mobile-nav:hover span{
-  background-color: #a1a1a1;
+.mobile-nav:hover span:first-child{
+  transform-origin: center;
+  transform: translateY(12px) rotate(-45deg);
+}
+
+.mobile-nav:hover span:nth-child(2){
+  background-color: transparent;
+}
+
+.mobile-nav:hover span:last-child{
+  transform-origin: center;
+  transform: translateY(-12px) rotate(45deg);
 }
 
 .mobile-content{
