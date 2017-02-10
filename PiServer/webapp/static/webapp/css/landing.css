@@ -1,5 +1,76 @@
 /* IDs for landing page */
 
 /* Classes for landing page */
+.home-sections{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.row-flex-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.column-flex-center{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.column-flex-space{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.column{
+  max-width: 300px;
+  margin: 0 10px;
+}
+
+.column-single{
+  max-width: 620px;
+  margin: 0 10px;
+}
+
+.about{
+  padding: 50px 0 0 0;
+  display: flex;
+  width: 100%;
+  background-img
+}
+
+.portfolio{
+  padding: 50px 0 0 0;
+  display: flex;
+  width: 100%;
+}
+
+.contact{
+  padding: 50px 0 50px 0;
+  display: flex;
+  width: 100%;
+}
+
+.landing-name{
+  font-size: 60px;
+  font-family: 'Expletus Sans', cursive;
+  color: #303030;
+  text-align: center;
+}
 
 /* Media queries for landing page */
+@media (max-width: 640px){
+  .column-flex{
+    display: block;
+  }
+  .column{
+    max-width: 100%;
+  }
+}

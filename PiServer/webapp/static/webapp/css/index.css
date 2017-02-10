@@ -1,4 +1,5 @@
 body, html{
   position: relative;
-  background: pink;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #FFFAF0;
 }

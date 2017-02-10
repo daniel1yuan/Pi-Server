@@ -81,8 +81,8 @@
   text-align: center;
   margin: 0 0 20px 0;
 }
-/* IDS */
-#nav{
+
+.nav{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -96,9 +96,21 @@
   padding: 30px 0;
 }
 
+.nav-positioner{
+  display: flex;
+  flex: none;
+  width: 135px;
+}
+/* IDS */
+
 /* Queries */
 @media (max-width: 765px){
-  #nav{
+  .nav-positioner{
+    width: 100vw;
+    height: 85px;
+  }
+
+  .nav{
     width: 100vw;
     padding: 20px 0;
     flex-direction: row;
@@ -125,6 +137,9 @@
   }
 
   .mobile-content{
+    display: block;
+  }
+  .page-container{
     display: block;
   }
 }
