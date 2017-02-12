@@ -4,8 +4,11 @@
 {% block extra_head %}
   <link rel = "stylesheet" type = "text/css" href = "{% static 'webapp/css/header.css' %}">
   <link rel = "stylesheet" type = "text/css" href = "{% static 'webapp/css/landing.css' %}">
+  <link rel = "stylesheet" type = "text/css" href = "{% static 'webapp/css/buttons.css' %}">
+  <script src="{% static 'webapp/js/landing.js' %}"></script>
 	<link href='https://fonts.googleapis.com/css?family=Expletus+Sans' rel='stylesheet' type='text/css'>	
   <link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
+  {% include "webapp/home-sections/background-images.html" %}
 {% endblock %}
 
 {% block content %}
