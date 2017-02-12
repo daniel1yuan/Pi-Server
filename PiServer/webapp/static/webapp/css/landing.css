@@ -134,6 +134,10 @@
   transform: translateY(100%) scale(0.5);
   transition: all 0.2s ease-in-out;
 }
+
+.project-date{
+  font-style: italic;
+}
 /* End landing page portfolio */
 
 /* Media queries for landing page */
