@@ -110,11 +110,13 @@
 }
 
 .project-container{
+  background-color: #EDE5C3;
   display: flex;
-  background-color: pink;
   width: 45%;
   margin: 10px;
   overflow: hidden;
+  background-position: center;
+  background-size: cover;
 }
 
 .project-container:hover .project-meta{
