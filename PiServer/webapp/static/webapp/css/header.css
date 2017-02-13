@@ -101,6 +101,28 @@
   flex: none;
   width: 135px;
 }
+
+.header-link{
+  color: black;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+.header-link:hover{
+  color: #84868c;
+  text-decoration: none;
+}
+
+.email-link{
+  color: black;
+  font-size: 12px;
+  transition: all 0.2s ease-in-out;
+}
+
+.email-link:hover{
+  color: #84868c;
+  text-decoration: none;
+}
 /* IDS */
 
 /* Queries */
