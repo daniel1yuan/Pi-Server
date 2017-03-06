@@ -14,31 +14,6 @@ def index(request):
   }
   return render(request, 'webapp/index.html', context)
 
-def about(request):
-  context = {
-    'title': 'Daniel Yuan'
-  }
-  print ("In About")
-  return render(request, 'webapp/about.html', context)
-
-def portfolio(request):
-  context = {
-    'title': 'Daniel Yuan'
-  }
-  return render(request, 'webapp/portfolio.html', context)
-
-def contact(request):
-  context = {
-    'title': 'Daniel Yuan'
-  }
-  return render(request, 'webapp/contact.html', context)
-
-def contact(request):
-  context = {
-    'title': 'Daniel Yuan'
-  }
-  return render(request, 'webapp/contact.html', context)
-
 def resume(request):
   resumePath = os.path.join(os.getcwd(), "webapp", "static", "webapp", "files", "ResumeUIUC2016.pdf")
   response = HttpResponse(FileWrapper(file(resumePath,'rb')), content_type='application/pdf')
