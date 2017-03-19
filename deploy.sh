@@ -3,6 +3,7 @@
 #This file is used to deploy this copy of PiServer to production version
 
 #Copy all files from source directory to webapps
+rm -rf /hdd/webapps/piserver/PiServer
 cp -r ./PiServer /hdd/webapps/piserver
 
 #Migrate and collect status
