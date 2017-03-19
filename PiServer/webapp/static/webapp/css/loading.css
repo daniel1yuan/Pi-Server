@@ -1,0 +1,57 @@
+.loading-cover{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #7d8f9e;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.load-container{
+  margin: 40px auto;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 10px;
+  position: fixed;
+  top: 40%;
+}
+
+.load-rect{
+  background-color: #333;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  animation: loadDelay 1.2s infinite ease-in-out;
+}
+
+.load_rect1{
+  animation-delay: -1.2s;
+}
+
+.load_rect2{
+  animation-delay: -1.1s;
+}
+
+.load_rect3{
+  animation-delay: -1.0s;
+}
+
+.load_rect4{
+  animation-delay: -0.9s;
+}
+
+.load_rect5{
+  animation-delay: -0.8s;
+}
+
+@keyframes loadDelay {
+  0%, 40%, 100% { 
+    transform: scaleY(0.4) 
+  }
+  20% { 
+    transform: scaleY(1.0) 
+  }
+}

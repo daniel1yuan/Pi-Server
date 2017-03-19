@@ -8,10 +8,13 @@
   <script src="{% static 'webapp/js/landing.js' %}"></script>
 	<link href='https://fonts.googleapis.com/css?family=Expletus+Sans' rel='stylesheet' type='text/css'>	
   <link href="https://fonts.googleapis.com/css?family=Ropa+Sans" rel="stylesheet">
+  <link rel = "stylesheet" type = "text/css" href = "{% static 'webapp/css/loading.css' %}">
+  <script src="{% static 'webapp/js/loading.js' %}"></script>
   {% include "webapp/home-sections/background-images.html" %}
 {% endblock %}
 
 {% block content %}
+  {% include "webapp/load-buffer.html" %}
   <div class = "page-container">
     {% include "webapp/header.html" %}
     <div class = "home-sections">
