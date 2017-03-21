@@ -1,0 +1,38 @@
+{% extends "webapp/__base.html" %}
+{% load staticfiles %}
+
+{% block extra_head %}
+  <link rel = "stylesheet" type = "text/css" href = "{% static 'webapp/css/contact.css' %}">
+  <!-- Scripts below  -->
+{% endblock %}
+
+{% block content %}
+  <div class = "page-container">
+    {% include "webapp/header.html" %}
+    <div class = "contact-container">
+      <div class = "page-title">Contact</div>
+          <div class = "contact">
+            <div class = "column-flex-center">
+              <div class = "column-single">
+                <div class = "contact-column">
+                  <div class = "contact-row"><a class = "email-link" href = "mailto:daniel1yuan@gmail.com">daniel1yuan@gmail.com</a></div>
+                  <div class = "contact-row">
+                    <div class = "linkContainer">
+                      <div class = "externalLink">
+                        <a id = "github"  href = "https://github.com/daniel1yuan">
+                        </a>
+                      </div>
+                      <div class = "externalLink">
+                        <a id = "linkedIn" href = "https://www.linkedin.com/in/daniel1yuan">
+                        </a>
+                      </div>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

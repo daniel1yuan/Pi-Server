@@ -20,6 +20,11 @@ def about(request):
   }
   return render(request, 'webapp/about.html', context)
   
+def contact(request):
+  context = {
+    'title': 'Daniel Yuan'
+  }
+  return render(request, 'webapp/contact.html', context)
 
 def resume(request):
   resumePath = os.path.join(os.getcwd(), "webapp", "static", "webapp", "files", "ResumeUIUC2016.pdf")
