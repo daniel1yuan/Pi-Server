@@ -46,16 +46,16 @@
   transition-duration: 0.3s;
 }
 
-.mobile-nav:hover span:first-child{
+.mobile-nav-active span:first-child{
   transform-origin: center;
   transform: translateY(12px) rotate(-45deg);
 }
 
-.mobile-nav:hover span:nth-child(2){
+.mobile-nav-active span:nth-child(2){
   background-color: transparent;
 }
 
-.mobile-nav:hover span:last-child{
+.mobile-nav-active span:last-child{
   transform-origin: center;
   transform: translateY(-12px) rotate(45deg);
 }
@@ -69,6 +69,10 @@
   transform: translateY(-100%);
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
+}
+
+.mobile-content-active{
+  transform: translateY(0%);
 }
 
 .mobile-site-nav{
