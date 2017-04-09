@@ -114,14 +114,14 @@
 	background-image: url("/static/webapp/assets/linkedIn-logo-gray.png");
 }
 
-.email-link{
+.email{
   color: black;
   font-size: 18px;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
 }
 
-.email-link:hover{
+.email:hover{
   color: #84868c;
   text-decoration: none;
 }

@@ -1,0 +1,31 @@
+{% extends "webapp/__base.html" %}
+{% load staticfiles %}
+
+{% block extra_head %}
+  <link rel = "stylesheet" type = "text/css" href = "{% static 'webapp/css/portfolio.css' %}">
+  <!-- Scripts below  -->
+{% endblock %}
+
+{% block content %}
+  <div class = "page-container">
+    {% include "webapp/header.html" %}
+    <div class = "portfolio-container">
+      <div class = "page-title">Portfolio</div>
+      <div class = "project-container">
+        <div class = "project">
+          <div class = "project-main">
+            <div class = "project-img"></div>
+            <div class = "project-data">
+              <div class = "project-title">TEST Project</div>
+              <div class = "project-date">March 2017</div>
+              <div class = "project-cta">Find Out More</div>
+            </div>
+          </div>
+          <div class = "project-extend">
+            <div class = "project-link">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

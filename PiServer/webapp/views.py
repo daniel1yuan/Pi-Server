@@ -20,6 +20,12 @@ def about(request):
   }
   return render(request, 'webapp/about.html', context)
   
+def portfolio(request):
+  context = {
+    'title': 'Daniel Yuan'
+  }
+  return render(request, 'webapp/portfolio.html', context)
+
 def contact(request):
   context = {
     'title': 'Daniel Yuan'
