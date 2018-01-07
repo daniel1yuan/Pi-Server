@@ -1,3 +1,5 @@
 PiServer/PiServer/staticfiles/
 PiServer/webapp/migrations/
 *.pyc
+*__pycache__
+config/django.conf

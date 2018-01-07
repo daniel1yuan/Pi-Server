@@ -1,0 +1,29 @@
+# @file: django_dockerfile
+# @author: Daniel Yuan
+# @brief: Docker Container for running containerized Django
+
+FROM python:latest
+ENV PYTHONUNBUFFERED 1
+
+
+# Using Raspbian with python
+# FROM resin/raspberrypi3-python:2.7
+
+ENV APP_USER docker-django-user
+ENV APP_ROOT /src
+RUN mkdir /src;
+RUN groupadd -r ${APP_USER} \
+    && useradd -r -m \
+    --home-dir ${APP_ROOT} \
+    -s /usr/sbin/nologin \
+    -g ${APP_USER} ${APP_USER}
+
+WORKDIR ${APP_ROOT}
+
+# # Copy all files into working directory
+COPY . ./
+
+# # Install dependencies
+RUN pip install -r ./config/requirements.txt
+
+USER docker-django-user
