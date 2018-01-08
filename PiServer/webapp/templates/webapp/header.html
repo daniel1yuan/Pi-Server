@@ -1,0 +1,14 @@
+{% load staticfiles %}
+<link rel = "stylesheet" type = "text/css" href = "{% static 'webapp/css/header.css' %}">
+<div id="page-header">
+  <a id="logo-container" href = "/">
+    <img id="logo" src = "{% static 'webapp/assets/logo.svg' %}"></img>
+  </a>
+
+  <div id="nav">
+    <div class="header-link"><a href="/About">About</a></div>
+    <div class="header-link"><a href="">Projects</a></div>
+    <div class="header-link"><a href="">Contact</a></div>
+  </div>
+
+</div>

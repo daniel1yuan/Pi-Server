@@ -7,3 +7,9 @@ def landing(request):
         'title': 'Daniel Yuan'
     }
     return render(request, 'webapp/landing.html', context)
+
+def about(request):
+    context = {
+        'title': 'Daniel Yuan: About'
+    }
+    return render(request, 'webapp/about.html', context)

@@ -1,0 +1,39 @@
+#page-header{
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo{
+  object-fit: contain;
+}
+
+#logo-container{
+  padding: 5px 15px 5px 15px;
+  height: calc(50px - 2*5px);
+  display: flex;
+}
+
+#nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.header-link{
+  display: flex;
+  margin: 10px;
+  color: #7E7E7E;
+  transition: all 0.2s ease-in-out;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.nav-link:hover{
+  color: black;
+}

@@ -1,0 +1,15 @@
+body{
+  margin: 0;
+}
+
+#page-container{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background: linear-gradient(25deg, rgba(0,117,255,0.4), rgba(255, 210, 128, 0.4));
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
