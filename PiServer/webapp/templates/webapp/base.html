@@ -1,0 +1,39 @@
+<!doctype html>
+{% load staticfiles %}
+<html>
+  <head>
+    {% block meta_tags %}
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% endblock %}
+
+    <title>
+      {% block title %}
+      {{title}}
+      {% endblock %}
+    </title>
+
+    {% block stylesheets %}
+    <link href="https://fonts.googleapis.com/css?family=Lato|Source+Sans+Pro" rel="stylesheet">
+    {% endblock %}
+
+    {% block javascript %}
+    <!-- CDNS -->
+    <script src="//code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
+    {% endblock %}
+
+    {% block extra_head %}
+    {% endblock %}
+
+  </head>
+  <body>
+    {% autoescape off %}
+    {% block env %}
+    {% endblock %}
+    {% endautoescape %}
+
+    {% block content %}
+    {% endblock %}
+  </body>
+</html>
