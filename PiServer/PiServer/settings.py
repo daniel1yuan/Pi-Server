@@ -31,7 +31,7 @@ SECRET_KEY = Config.get('Secret', 'SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # Load Debug from environment variable
-DEBUG = os.environ['ISPROD']
+DEBUG = not os.environ['ISPROD']
 if (DEBUG):
     print ("Running DEV environment")
 else:
