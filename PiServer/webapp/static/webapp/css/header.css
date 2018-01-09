@@ -30,8 +30,13 @@
   color: #7E7E7E;
   transition: all 0.2s ease-in-out;
   font-family: 'Lato', sans-serif;
+  transition: all 0.2s ease-in-out;
   font-size: 14px;
   cursor: pointer;
+}
+
+.header-link:hover{
+  color: black;
 }
 
 .nav-link:hover{

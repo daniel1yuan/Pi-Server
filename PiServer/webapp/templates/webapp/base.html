@@ -16,12 +16,13 @@
 
     {% block stylesheets %}
     <link href="https://fonts.googleapis.com/css?family=Lato|Source+Sans+Pro" rel="stylesheet">
+    <link rel="icon" type="image/ico" href="{% static 'webapp/assets/favicon.ico' %}"/>
+
     <link rel = "stylesheet" type = "text/css" href = "{% static 'webapp/css/base.css' %}">
+
     {% endblock %}
 
     {% block javascript %}
-    <!-- CDNS -->
-    <script src="//code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
     {% endblock %}
 
     {% block extra_head %}

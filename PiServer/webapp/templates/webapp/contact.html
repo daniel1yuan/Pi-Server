@@ -1,0 +1,24 @@
+{% extends "webapp/base.html" %}
+{% load staticfiles %}
+{% block extra_head %}
+<!-- CSS -->
+<link rel = "stylesheet" type = "text/css" href = "{% static 'webapp/css/contact.css' %}">
+{% endblock %}
+
+{% block content %}
+<div id="page-container">
+  <!-- Header -->
+  {% include "webapp/header.html" %}
+
+  <!-- Contact -->
+  <div class = "content-container">
+    <div id="content-title">Contact</div>
+    <div id="content-body">
+      <div id="email">daniel1yuan@gmail.com</div>
+      <div id="link-container">
+        <a id="github"  href = "https://github.com/daniel1yuan"></a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

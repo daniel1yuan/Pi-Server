@@ -12,7 +12,32 @@
 
   <!-- About Me Body -->
   <div id="content-container">
+    <div id="content-title">About Me</div>
+    <div id="content-body">
+      <div id="img-section" class="content-section">
+        <img id="me-img" src="{% static 'webapp/assets/me.jpg' %}">
+        <div id="me-stats">
+          B.S. UIUC '18
+        </div>
+      </div>
+      <div id="text-section" class="content-section">
+        <p class="text-paragraph">
+          Hi! I'm Daniel Yuan, a senior at UIUC majoring in Electrical Engineering and minoring in Computer Science with interests primarily in AI, robotics, and digital signal processing. I do research in Derek Hoiem's computer vision group with the primary focus on structure from motion algorithms.
+        </p>
+        <p class="text-paragraph">
+          On my offtime, I often work on personal projects usually which can range from life automating my life to learning new concepts in AI. Most of these can be found on my
+          <!-- <a class="about-link" href="/Project"> projects </a> -->
+          <!-- page. -->
+          <a class="about-link" href="https://github.com/daniel1yuan">github</a>.
+        </p>
 
+        <p class="text-paragraph">
+          For those interested, here is my
+          <a class="about-link" href="/Resume">Resume</a>.
+        </p>
+
+      </div>
+    </div>
   </div>
 </div>
 {% endblock %}

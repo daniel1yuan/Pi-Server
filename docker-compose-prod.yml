@@ -1,0 +1,29 @@
+version: '3'
+services:
+  database:
+    image: postgres:latest
+
+  django:
+    build:
+      context: .
+      dockerfile: ./dockerfiles/django_dockerfile
+    command: bash -c "python manage.py makemigrations && python manage.py migrate && gunicorn mydjango.wsgi -b 0.0.0.0:8000"
+    environment:
+      - ISPROD=False
+    volumes:
+      - .:/src
+    depends_on:
+      - database
+    expose:
+      - "8000"
+
+  nginx:
+    image: nginx:latest
+    container_name: ng01
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./src:/src
+      - ./config/nginx:/etc/nginx/conf.d
+    depends_on:
+      - web
