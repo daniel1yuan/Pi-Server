@@ -37,7 +37,7 @@ if (DEBUG):
 else:
     print ("Running PROD environment")
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['django']
 
 
 # Application definition
