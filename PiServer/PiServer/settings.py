@@ -31,13 +31,13 @@ SECRET_KEY = Config.get('Secret', 'SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # Load Debug from environment variable
-DEBUG = not os.environ['ISPROD']
+DEBUG = os.environ['ISPROD'] == 'False'
 if (DEBUG):
     print ("Running DEV environment")
 else:
     print ("Running PROD environment")
 
-ALLOWED_HOSTS = ['django']
+ALLOWED_HOSTS = ['localhost', 'danielyuan.me']
 
 
 # Application definition
@@ -136,3 +136,34 @@ STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 STATIC_URL = '/static/'
 
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
+import logging
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'filters': {
+        'require_debug_false': {
+            '()': 'django.utils.log.RequireDebugFalse'
+        }
+    },
+    'formatters': {
+        'verbose': {
+            'format': '[contactor] %(levelname)s %(asctime)s %(message)s'
+        },
+    },
+    'handlers': {
+        # Send all messages to console
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+        }
+    },
+    'loggers': {
+        # This is the "catch all" logger
+        '': {
+            'handlers': ['console'],
+            'level': 'DEBUG',
+            'propagate': False,
+        },
+    }
+}
