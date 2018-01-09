@@ -1,8 +1,5 @@
 version: '3'
 services:
-  database:
-    image: postgres:latest
-
   django:
     build:
       context: .
@@ -14,5 +11,3 @@ services:
       - .:/src
     ports:
       - 8000:8000
-    depends_on:
-      - database

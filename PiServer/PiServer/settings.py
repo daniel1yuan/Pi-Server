@@ -87,12 +87,16 @@ WSGI_APPLICATION = 'PiServer.wsgi.application'
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
 DATABASES = {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    #     'NAME': Config.get('Database', 'NAME'),
+    #     'USER': Config.get('Database', 'USER'),
+    #     'HOST': Config.get('Database', 'HOST'),
+    #     'PORT': Config.get('Database', 'PORT'),
+    # }
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': Config.get('Database', 'NAME'),
-        'USER': Config.get('Database', 'USER'),
-        'HOST': Config.get('Database', 'HOST'),
-        'PORT': Config.get('Database', 'PORT'),
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 

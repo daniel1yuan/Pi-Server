@@ -3,3 +3,4 @@ PiServer/webapp/migrations/
 *.pyc
 *__pycache__
 config/django.conf
+PiServer/db.sqlite3
