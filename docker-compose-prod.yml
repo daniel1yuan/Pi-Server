@@ -9,7 +9,7 @@ services:
       dockerfile: ./dockerfiles/django_dockerfile
     command: bash -c "cd PiServer && python manage.py makemigrations && python manage.py migrate && gunicorn PiServer.wsgi -b 0.0.0.0:8000"
     environment:
-      - ISPROD=False
+      - ISPROD=True
     volumes:
       - .:/src
     depends_on:
