@@ -7,7 +7,7 @@ services:
     build:
       context: .
       dockerfile: ./dockerfiles/django_dockerfile
-    command: bash -c "cd PiServer && python manage.py makemigrations && python manage.py migrate && gunicorn PiServer.wsgi -b 0.0.0.0:8000"
+    command: bash -c "cd PiServer && python manage.py collectstatic --noinput && python manage.py makemigrations && python manage.py migrate && gunicorn PiServer.wsgi -b 0.0.0.0:8000"
     environment:
       - ISPROD=True
     volumes:
